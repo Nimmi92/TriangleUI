@@ -1,0 +1,32 @@
+{
+  "name": "Triangle_UI",
+  "version": "1.0.0",
+  "description": "ES6 with Jest",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress",
+    "lint": "eslint ./src --ext .js"
+  },
+  "author": "Nirmaladevi Boopathy",
+  "license": "",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.18.1",
+    "eslint-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jest": "^23.6.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

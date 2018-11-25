@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://d5wfroyti11sa.cloudfront.net/prod/client/ts-11.0.3.min.css"/>
+  <title>Triangle UI</title>
+</head>
+<body>
+  <header data-ts="TopBar"></header>
+		<main data-ts="Main">
+			<div data-ts="MainContent">
+				<form data-ts="Form" name="triangleForm">
+					<p>Give length of triagle's sides(units in cm)</p>
+					<fieldset>
+					<label>
+						<span>A</span>
+						<input type="number" id="side1" placeholder="side 1 of a triagle" required/>
+					</label>
+					<dl class="ts-errors side1 hidden">
+						<dt>Conditions for side 1 length</dt>
+						<dd>side length of a traingle should be a number.</dd>
+					</dl>
+					<label>
+						<span>B</span>
+						<input type="number" id="side2" placeholder="side 2 of a triagle"  required/>
+					</label>
+					<dl class="ts-errors side2 hidden">
+						<dt>Conditions for side 2 length</dt>
+						<dd>side length of a traingle should be a number.</dd>
+					</dl>
+					<label>
+						<span>C</span>
+						<input type="number" id="side3" placeholder="side 3 of a triagle"  required/>
+					</label>
+					<dl class="ts-errors side3 hidden">
+						<dt>Conditions for side 3 length</dt>
+						<dd>side length of a traingle should be a number.</dd>
+					</dl>
+					<button data-ts="Button" id="check" disabled class="ts-primary">
+						<span>Check</span>
+					</button>
+					</fieldset>
+				</form>
+				<dialog data-ts="Modal" id="resultModal">
+					<div data-ts="Panel">
+						<main data-ts="Main">
+							<h1>Result</h1>
+							<p id="result"></p>
+							 <canvas id="resultCanvas" width="200" height="150"></canvas>
+							<p>
+								<button class="ts-primary" id="retry">
+									<span>Retry</span>
+								</button>
+							</p>
+						</main>
+					</div>
+				</dialog>
+			</div>
+		</main>
+		<aside data-ts="Aside" data-ts.open="false" id="triangleinfo">
+			<div data-ts="Panel">
+				<h2>Types of triangle</h2>
+				 <canvas id="triangleCanvas" width="250" height="400"></canvas>
+			</div>
+		</aside>
+  <script src="https://d5wfroyti11sa.cloudfront.net/prod/client/ts-11.0.3.min.js"></script>
+  <script src="build/app.bundle.js"></script>
+</body>
+</html>

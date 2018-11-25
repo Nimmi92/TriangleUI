@@ -1,0 +1,16 @@
+body {
+	color: #4c4c4c;
+}
+main {
+	padding: 2%;
+}
+p {
+	margin-bottom: 10px;
+}
+form {
+	width: 50%;
+	margin: 2% 5%;
+}
+.hidden {
+	display: none;
+}
